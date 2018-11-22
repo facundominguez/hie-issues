@@ -1,0 +1,4 @@
+resolver: lts-11.18
+packages:
+- cpp-package
+- plugin-user-package

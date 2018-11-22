@@ -1,0 +1,14 @@
+{-# LANGUAGE CPP #-}
+module CPP where
+
+f :: a -> a
+f x = x
+
+h :: Char -> Char
+h = f
+
+#define MONO_ID(T,name) \
+name :: T -> T; \
+name = f
+
+MONO_ID(Int,idInt)
